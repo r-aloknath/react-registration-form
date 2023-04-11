@@ -1,38 +1,100 @@
-.App {
-  text-align: center;
+body {
+  background: rgb(2, 0, 36);
+  background: radial-gradient(
+    circle,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(30, 54, 59, 1) 0%,
+    rgba(93, 93, 116, 1) 100%
+  );
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container {
+  display: flex !important;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  max-width: 800px;
+  width: 100%;
+  margin: auto;
+}
+.container > form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  /* justify-content: center; */
+  width: 80%;
+  border: 1px solid #dfdfdf;
+  padding: 20px;
+  border-radius: 5px;
+  background: #fff;
+}
+.field {
+  display: flex;
+  flex-direction: column;
+}
+pre {
+  width: 70%;
+  color: #fff;
+  font-size: larger;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.signin-btn {
+  background: #855585 !important;
+  position: relative;
+  right: -76%;
+  height: 40px;
+  width: 20%;
+  border: none;
+  border-radius: 8px;
+  color: #ffffff;
+  font-weight: bolder;
+  font-size: 15px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.close-btn {
+  background: transparent;
+  border: 1px solid lightgrey;
+  color: lightgrey;
+  padding: 5px 25px;
+  margin: 5px;
+}
+
+p {
+  color: red;
+  margin: 0px 0px 5px 5px;
+  font-size: 11px;
+  font-weight: bold;
+}
+
+label {
+  font-size: 14px;
+  margin-left: 10px;
+  font-weight: bold;
+}
+
+.fields {
+  display: flex;
+  flex-direction: row;
+}
+
+input , select {
+  padding: 10px;
+  margin: 5px;
+  border: 2px solid violet;
+  border-radius: 6px;
+}
+
+.success-message {
+  height: 70px;
+  width: 53%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  background: lightslategrey;
+  position: absolute;
+  font-weight: bold;
   color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  border-radius: 10px;
 }
